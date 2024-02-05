@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+html {
+    margin:-0.2cm;
+    background: url(./assets/Back.png),repeat;
+    position:inherit;
+    bottom: auto;
+    background-position: center; 
+    background-size: cover;
+    min-height: 100vh;
+    z-index: -1;
+}
+.logo{
+    background-image: url(./assets/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    min-height: 15vh;
+    float: left;
+    margin: 10px;
+    padding:28px;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+}
+footer{
+    background-color: #121212;
+    margin-top: auto;
+    width: 100%;
+    color:rgb(255, 255, 255);
+}
+.container{
+    position: flex;
+    margin-bottom: 10%;
+}
+.EdR{
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    margin-left: 10;
+    margin-top: 30px;
+}
+/* Menu*/
+header{
+    width: 100%;
+    background:rgba(31,32,23,0.2);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(12,12,12,0.62);
+    padding-top:-10px;
+    height: 90px;
+}
+
+li {
+    float: right;
+    margin-top: -29px;
+}    
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-inline: 9px;
+}  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4B543B;
+    border-radius: 80px ;
+}  
+.dropdown:hover .dropbtn {
+    background-color:#4B543B;
+}  
+li.dropdown {
+    display: inline-block;  
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#4B543B;
+    box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 10px;
+    top:49px;
+    min-width: 109px;
+}
+.dropdown-content.aa{
+    margin-left: 12px;
+    top:52px;
+    min-width: 140px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin:10px;
+    z-index: 1;
+}
+.dropdown-content .rojo:hover ,
+.dropdown-content .verde:hover ,
+.dropdown-content .amarillo:hover,
+.dropdown-content .azul:hover  {
+    background-color: #686868;
+    position: relative;
+    left: 20px;
+    height:10px;
+    border-radius:80px ;
+    z-index: 1;
+}
+.dropdown-content .plata:hover {
+    background-color: #686868;
+    position: relative;
+    z-index: 1;
+    border-radius:80px;
+
+}
+.dropdown-content .verde:hover, .dropdown-cube-1{
+    background-color: #0c520c;
+    color:antiquewhite
+}
+.dropdown-content .rojo:hover, .dropdown-cube-2{
+    background-color: #ea0b0b;
+    color:antiquewhite
+}
+.dropdown-content .azul:hover, .dropdown-cube-3{
+    background-color: #2b0acf;
+    color:antiquewhite
+}
+.dropdown-content .amarillo:hover, .dropdown-cube-4{
+    background-color: #e3ea15;
+    color:antiquewhite
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .verde:hover + .dropdown-cube-1,
+.dropdown-content .rojo:hover + .dropdown-cube-2,
+.dropdown-content .azul:hover + .dropdown-cube-3,
+.dropdown-content .amarillo:hover + .dropdown-cube-4{
+    display: block;
+}
+.dropdown-cube-1,
+.dropdown-cube-2,
+.dropdown-cube-3,
+.dropdown-cube-4 {
+    display: none;
+    position: absolute; 
+    left: 140px;
+    z-index: 1;
+    margin:-44px;
+    height: 100%;
+    width: 200%;
+}
